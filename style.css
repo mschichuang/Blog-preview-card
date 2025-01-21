@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(14px, 3vw, 16px);
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  width: clamp(327px, 85vw, 384px);
+  padding: 23px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 black;
+  display: flex;
+  flex-direction: column;
+}
+
+main > img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.tag {
+  align-self: flex-start;
+  background-color: hsl(47, 88%, 63%);
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  border-radius: 5px;
+  margin-bottom: 14px;
+}
+
+.date {
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(19.8px, 5vw, 23.8px);
+  font-weight: 800;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.description {
+  color: hsl(0, 0%, 42%);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+footer img {
+  width: 32px;
+}
+
+.author {
+  font-size: 0.88rem;
+  font-weight: 800;
+}
